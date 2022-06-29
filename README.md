@@ -339,3 +339,18 @@ To install a language pack for WordPress core, just grab the language name (the 
 ### You can also install older versions of WordPress plugins if needed with the --version attribute.
 
 <code>wp plugin install wordpress-seo --version=4.8 --activate</code>
+
+
+# Install theme unit test data
+
+#### Below you can find the WP-CLI commands for all of the above tasks.
+
+#### Go to on WordPress Project Directory Path:
+
+<code>curl -O https://wpcom-themes.svn.automattic.com/demo/theme-unit-test-data.xml</code>
+
+<code>wp plugin install wordpress-importer --activate</code>
+
+<code>wp import ./theme-unit-test-data.xml --authors=create</code>
+
+<code>rm theme-unit-test-data.xml</code>
